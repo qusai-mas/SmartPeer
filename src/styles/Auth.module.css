@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e0e7ff;
+}
+
+.input {
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  transition: all var(--transition-speed) ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-secondary);
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+.button {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-top: 16px;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 63, 94, 0.6);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.toggleContainer {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 6px;
+  margin-bottom: 24px;
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all var(--transition-speed);
+}
+
+.toggleBtn.active {
+  background: var(--accent-secondary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.5);
+}
+
+.error {
+  color: #fff;
+  background: rgba(239, 68, 68, 0.8);
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.linkText {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.linkText a {
+  color: var(--accent-tertiary);
+  font-weight: 800;
+}

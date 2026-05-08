@@ -1,0 +1,82 @@
+:root {
+  /* Vibrant Deep Colorful Background */
+  --bg-primary: #1e1b4b; /* Deep Indigo */
+  --bg-secondary: #312e81; /* Lighter Indigo */
+  --bg-tertiary: #4338ca;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #c7d2fe;
+  
+  --accent-primary: #f43f5e; /* Vibrant Rose */
+  --accent-secondary: #8b5cf6; /* Vibrant Violet */
+  --accent-tertiary: #06b6d4; /* Vibrant Cyan */
+  
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+
+  --border-radius: 16px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', 'Inter', 'Roboto', sans-serif;
+}
+
+body {
+  /* Beautiful colorful gradient instead of flat black */
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.1rem; /* Bigger base font size */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.4rem; }
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--accent-tertiary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1.1rem; /* Bigger buttons */
+}
+
+.premium-gradient-text {
+  background: linear-gradient(135deg, #f43f5e, #f9a8d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 20px rgba(244, 63, 94, 0.3);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius);
+  padding: 32px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
